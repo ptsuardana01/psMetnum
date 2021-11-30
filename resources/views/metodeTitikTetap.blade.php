@@ -1,8 +1,10 @@
-<x-app>
-    <x-slot name="header">
-            {{ __('Metode Titik Tetap') }}
-    </x-slot>
+@extends('layouts.app')
 
+    @section('header')
+        {{ __('Metode Titik Tetap') }}
+    @endsection
+
+    @section('content')
     <div class="container-fluid py-4">
         <div class="row">
           <div class="col-12">
@@ -82,4 +84,4 @@
           </div>
         </footer>
       </div>
-</x-app>
+    @endsection

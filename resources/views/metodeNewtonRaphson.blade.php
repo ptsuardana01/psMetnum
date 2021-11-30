@@ -1,8 +1,10 @@
-<x-app>
-    <x-slot name="header">
-            {{ __('Metode Newton Raphson') }}
-    </x-slot>
+@extends('layouts.app')
 
+    @section('header')
+        {{ __('Metode Newton Raphson') }}
+    @endsection
+
+    @section('content')
     <div class="container-fluid py-4">
         <div class="row">
           <div class="col-12">
@@ -88,4 +90,4 @@
           </div>
         </footer>
       </div>
-</x-app>
+      @endsection

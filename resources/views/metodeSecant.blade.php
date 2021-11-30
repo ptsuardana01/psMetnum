@@ -1,8 +1,10 @@
-<x-app>
-    <x-slot name="header">
-            {{ __('Metode Secant') }}
-    </x-slot>
+@extends('layouts.app')
 
+    @section('header')
+        {{ __('Metode Secant') }}
+    @endsection
+
+    @section('content')
     <div class="container-fluid py-4">
         <div class="row">
           <div class="col-12">
@@ -87,4 +89,4 @@
           </div>
         </footer>
       </div>
-</x-app>
+    @endsection

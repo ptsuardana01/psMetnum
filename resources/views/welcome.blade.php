@@ -1,8 +1,10 @@
-<x-app>
-    <x-slot name="header">
-            {{ __('Dashboard') }}
-    </x-slot>
+@extends('layouts.app')
 
+    @section('header')
+        {{ __('Dashboard') }}
+    @endsection
+
+    @section('content')
     <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
         <div class="card" style="width: 44.5rem;">
             <div class="card-header p-3 pt-2">
@@ -21,5 +23,4 @@
             </div>
         </div>
       </div>
-
-</x-app>
+    @endsection

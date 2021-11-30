@@ -1,8 +1,10 @@
-<x-app>
-    <x-slot name="header">
-            {{ __('Metode Regula Falsi') }}
-    </x-slot>
+@extends('layouts.app')
 
+    @section('header')
+        {{ __('Metode Regula Falsi') }}
+    @endsection
+
+    @section('content')
     <div class="container-fluid py-4">
         <div class="row">
             <div class="col-sm-12">
@@ -108,4 +110,4 @@
           </div>
         </footer>
       </div>
-</x-app>
+      @endsection
